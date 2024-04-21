@@ -38,7 +38,7 @@ class DecreaseSpeed():
 
 
 
-class Car(IncreaseSpeed, DecreaseSpeed):
+class Car():
   
   total_car=0
 
@@ -47,12 +47,6 @@ class Car(IncreaseSpeed, DecreaseSpeed):
     self.max_speed= max_speed
     self.c_speed = current_speed
     self.on_a_road = on_a_road
-
-    
-
-    IncreaseSpeed().__init__()
-    DecreaseSpeed().__init__()
-
     
 
   def accelerate(self, upper_border=None):
